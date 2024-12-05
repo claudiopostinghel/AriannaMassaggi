@@ -1,17 +1,11 @@
 html {
-<<<<<<< HEAD
-    background-color: #F4F5F7;
-=======
     background-color: #FAF7F5;
->>>>>>> fix
 }
 
 body {
     font-family: 'Inter', sans-serif;
     color: #550718;
     font-size: 20px;
-<<<<<<< HEAD
-=======
 }
 
 #hero-container {
@@ -30,5 +24,4 @@ footer {
 * {
     @apply leading-none;
     /* border: 1px solid red !important; */
->>>>>>> fix
 }
