@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +9,94 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <meta
+      name="description"
+      content="Emma Sicher - Bio-designer exploring the intersection of materials, food, and microorganisms. Creating sustainable solutions through innovative design."
+    />
+    <meta
+      name="keywords"
+      content="Emma Sicher, bio design, sustainable materials, food design, microorganisms, biomaterials, sustainable design, material innovation"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Emma Sicher | Bio-Designer" />
+    <meta
+      property="og:description" 
+      content="Designing innovative materials and foods with microorganisms for a sustainable future."
+    />
+    <meta property="og:image" content="opengraph.jpg" />
+    <meta property="og:type" content="website" />
+  
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Emma Sicher — Bio-Designer" />
+    <meta
+      name="twitter:description"
+      content="Designing innovative materials and foods with microorganisms for a sustainable future."
+    />
+    <meta name="twitter:image" content="opengraph.jpg" />
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Emma Sicher",
+        "description": "Bio-designer exploring the intersection of materials, food, and microorganisms. Creating sustainable solutions through innovative design.",
+        "url": "",
+        "jobTitle": "Bio-Designer"
+      }
+    </script>
+
 </head>
-<body>
-    <div id="hero-container" class="flex flex-col items-center justify-center pb-40">
 
-        <div class="relative w-full flex flex-col items-center mb-6">
-            <img src="gradientCover.svg" class="absolute top-0 w-full h-8">
-            <img src="cover.png" alt="Cover image" class="h-[288px] w-full object-cover object-bottom">
-            <img src="EmmaProfile.jpg" class="w-[195px] h-[195px] rounded-lg shadow-lg absolute -bottom-8">
-        </div>
-        
-        <div class="text-[#8B1538] mt-4 mb-6 text-[32px]">Emma Sicher</div>
+<body class="overflow-x-hidden">
+    <div id="hero-container" class="flex flex-col items-center justify-center">
 
-        <div class="relative">
-            <h1 class="text-[60px] font-semibold font-['Inter'] leading-none text-[#8B1538] text-center">
-                I design materials and foods<br>
-                with microorganisms
-            </h1>
+        <div class="relative w-full flex flex-col items-center pt-8 pb-4">
+            <img src="gradientCover.svg" class="absolute top-0 w-full h-8 z-10">
+            <img src="cover.png" alt="Cover image"
+                class="h-3/4 w-full object-cover object-bottom absolute top-0 w-full -z-10">
+
+            <img src="EmmaProfile.jpg" class="w-40 h-40 rounded-lg shadow-lg">
         </div>
 
-        
-        <p class="font-light text-[20px] max-w-xl leading-[130%] text-[#8B1538] text-center mt-8 mb-12">
-            Maecenas condimentum quam eu laoreet finibus sapien velit vestibulum nunc eu posuere magna neque sit amet magna.
-        </p>
-        
-        <button class="bg-[#8B1538] text-white px-8 py-3 rounded-full text-lg">Work with me</button>
+        <div class="flex flex-col items-center px-8">
 
-        <img src="HandLeft.png" class="absolute left-0 bottom-0 w-[381px] h-[373px]">
-        <img src="HandRight.png" class="absolute right-0 bottom-0 w-[360px] h-[373px]">
+            <div class="text-[#8B1538] mb-6 text-[20px]">Emma Sicher</div>
+
+            <div class="relative">
+                <h1 class="text-4xl xl:text-6xl font-semibold font-['Inter'] leading-none text-[#8B1538] text-center">
+                    I design
+                    <span><br class="block md:hidden"></span>
+                    materials and foods<br>
+                    with microorganisms
+                </h1>
+            </div>
+
+
+            <p class="font-light text-[16px] max-w-xl leading-[130%] text-[#8B1538] text-center mt-8 mb-12">
+                Maecenas condimentum quam eu laoreet finibus sapien velit vestibulum nunc eu posuere magna neque sit
+                amet magna.
+            </p>
+
+            <button
+                class="bg-[#8B1538] hover:bg-[#6d102c] active:scale-95 text-white px-8 py-3 rounded-full text-lg transition-all duration-200">Work
+                with me</button>
+
+            <div class="hidden md:block">
+                <img src="HandLeft.png" class="absolute translate-x-[-5vw] lg:translate-x-0 left-0 bottom-0 w-[352px] h-auto max-w-[calc(50vw-110px)] -z-10">
+                <img src="HandRight.png" class="absolute translate-x-[5vw] lg:translate-x-0 right-0 bottom-0 w-[352px] h-auto max-w-[calc(50vw-110px)] -z-10">
+            </div>
+
+            <img src="HandCenter.png" class="w-full md:hidden">
+
+        </div>
+
     </div>
 </body>
+
 </html>

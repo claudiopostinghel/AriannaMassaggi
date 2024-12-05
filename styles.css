@@ -3,8 +3,11 @@ html {
 }
 
 body {
-    background-color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     color: #550718;
     font-size: 20px;
+}
+
+* {
+    @apply leading-none;
 }
