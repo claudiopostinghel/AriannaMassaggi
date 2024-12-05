@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +9,146 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <meta name="description"
+        content="Emma Sicher - Bio-designer exploring the intersection of materials, food, and microorganisms. Creating sustainable solutions through innovative design." />
+    <meta name="keywords"
+        content="Emma Sicher, bio design, sustainable materials, food design, microorganisms, biomaterials, sustainable design, material innovation" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Emma Sicher | Bio-Designer" />
+    <meta property="og:description"
+        content="Designing innovative materials and foods with microorganisms for a sustainable future." />
+    <meta property="og:image" content="opengraph.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Emma Sicher — Bio-Designer" />
+    <meta name="twitter:description"
+        content="Designing innovative materials and foods with microorganisms for a sustainable future." />
+    <meta name="twitter:image" content="opengraph.jpg" />
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Emma Sicher",
+        "description": "Bio-designer exploring the intersection of materials, food, and microorganisms. Creating sustainable solutions through innovative design.",
+        "url": "",
+        "jobTitle": "Bio-Designer"
+      }
+    </script>
+
 </head>
-<body>
-    <div id="hero-container" class="flex flex-col items-center justify-center pb-40">
 
-        <div class="relative w-full flex flex-col items-center mb-6">
-            <img src="gradientCover.svg" class="absolute top-0 w-full h-8">
-            <img src="cover.png" alt="Cover image" class="h-[288px] w-full object-cover object-bottom">
-            <img src="EmmaProfile.jpg" class="w-[195px] h-[195px] rounded-lg shadow-lg absolute -bottom-8">
-        </div>
-        
-        <div class="text-[#8B1538] mt-4 mb-6 text-[32px]">Emma Sicher</div>
+<body class="overflow-x-hidden">
+    <div id="hero-container" class="flex flex-col items-center relative">
 
-        <div class="relative">
-            <h1 class="text-[60px] font-semibold font-['Inter'] leading-none text-[#8B1538] text-center">
-                I design materials and foods<br>
-                with microorganisms
-            </h1>
+        <div class="relative w-full flex flex-col items-center">
+            <img src="gradientCover.svg" class="absolute top-0 w-full h-8 z-10">
+            <img src="cover.png" alt="Cover image"
+                class="h-3/4 w-full object-cover object-bottom w-full z-1 max-h-[200px]">
+
+            <img id="profile-pic" src="EmmaProfile.jpg" class="w-40 h-40 rounded-full z-20 -mt-20">
         </div>
 
-        
-        <p class="font-light text-[20px] max-w-xl leading-[130%] text-[#8B1538] text-center mt-8 mb-12">
-            Maecenas condimentum quam eu laoreet finibus sapien velit vestibulum nunc eu posuere magna neque sit amet magna.
-        </p>
-        
-        <button class="bg-[#8B1538] text-white px-8 py-3 rounded-full text-lg">Work with me</button>
+        <div class="flex flex-col items-center px-8 z-20">
 
-        <img src="HandLeft.png" class="absolute left-0 bottom-0 w-[381px] h-[373px]">
-        <img src="HandRight.png" class="absolute right-0 bottom-0 w-[360px] h-[373px]">
+            <div class="text-[#8B1538] mb-6 text-2xl">Emma Sicher</div>
+
+            <div class="relative">
+                <h1
+                    class="text-4xl md:text-5xl xl:text-6xl font-semibold font-['Inter'] leading-none text-[#8B1538] text-center">
+                    I design
+                    <span><br class="block md:hidden"></span>
+                    materials and foods
+                    <span><br class="hidden md:block"></span>
+                    with microorganisms
+                </h1>
+            </div>
+
+
+            <p class="font-light text-[20px] max-w-2xl leading-[130%] text-[#8B1538] text-center mt-8 mb-12">
+                A bio-designer exploring sustainable materials through microbial innovation. Featured in a TED talk and
+                giving workshops, aiming to share nature's potential to transform our materials and food systems.
+            </p>
+
+            <button
+                class="bg-[#8B1538] hover:bg-[#6d102c] active:scale-95 text-white px-8 py-3 rounded-full text-lg transition-all duration-200 mb-[300px] xl:mb-0">Work
+                with me</button>
+
+                <!-- <div>.</div> -->
+
+
+        </div>
+
+        <div class="hidden z-10 md:block">
+            <img src="HandLeft.png"
+                class="absolute left-0 bottom-0 w-[375px] h-auto max-w-[calc(50vw-140px)] max-h-[calc(100vh-510px)] object-contain object-left">
+            <img src="HandRight.png"
+                class="absolute right-0 bottom-0 w-[375px] h-auto max-w-[calc(50vw-140px)] max-h-[calc(100vh-510px)] object-contain object-right">
+        </div>
+
+        <img src="HandCenter.png" class="w-full md:hidden">
+
     </div>
+
+    <div class="px-8 py-24 max-w-7xl mx-auto">
+        <!-- Section 1 -->
+        <div class="flex flex-col md:flex-row items-center gap-12 mb-24">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-semibold text-[#8B1538] mb-4">Sustainable Materials</h2>
+                <p class="text-[#8B1538] font-light leading-relaxed">Creating innovative biomaterials through microbial fermentation, transforming organic waste into valuable resources. My research focuses on developing sustainable alternatives to conventional materials.</p>
+            </div>
+            <img src="materials.jpg" alt="Sustainable materials" class="md:w-1/2 rounded-lg shadow-lg">
+        </div>
+
+        <!-- Section 2 -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-24">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-semibold text-[#8B1538] mb-4">Food Innovation</h2>
+                <p class="text-[#8B1538] font-light leading-relaxed">Exploring new frontiers in food design through microbial fermentation. Developing novel food experiences that are both sustainable and nutritious.</p>
+            </div>
+            <img src="food.jpg" alt="Food innovation" class="md:w-1/2 rounded-lg shadow-lg">
+        </div>
+
+        <!-- Section 3 -->
+        <div class="flex flex-col md:flex-row items-center gap-12 mb-24">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-semibold text-[#8B1538] mb-4">Workshops & Education</h2>
+                <p class="text-[#8B1538] font-light leading-relaxed">Sharing knowledge through divulgative talks and hands-on workshops. Empowering others to understand and work with biological systems.</p>
+            </div>
+            <img src="ted.jpg" alt="Workshops" class="md:w-1/2 rounded-lg shadow-lg">
+        </div>
+
+        <!-- Section 4 -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-semibold text-[#8B1538] mb-4">Research & Development</h2>
+                <p class="text-[#8B1538] font-light leading-relaxed">Conducting cutting-edge research in biomaterial development and microbial applications. Collaborating with scientists and industry partners to bring innovations to market.</p>
+            </div>
+            <img src="research.jpg" alt="Research" class="md:w-1/2 rounded-lg shadow-lg">
+        </div>
+    </div>
+
+    <footer class="py-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 px-8">
+            <div class="text-center md:text-left">
+                <h3 class="font-semibold text-xl mb-2">Emma Sicher</h3>
+                <p class="font-light">Bio-Designer & Material Innovator</p>
+            </div>
+            <div class="flex gap-8">
+                <a href="mailto:emma.sicher@gmail.com" class="hover:opacity-80">Email</a>
+                <a href="https://www.linkedin.com/in/emma-sicher-31427314b/" class="hover:opacity-80">LinkedIn</a>
+                <a href="https://www.instagram.com/seeker_biodesign/" class="hover:opacity-80">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
