@@ -46,7 +46,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <div id="hero-container" class="flex flex-col items-center justify-center">
+    <div id="hero-container" class="flex flex-col items-center relative min-h-[min(900px,100vh)]">
 
         <div class="relative w-full flex flex-col items-center pt-20 pb-4">
             <img src="gradientCover.svg" class="absolute top-0 w-full h-8 z-10">
@@ -85,13 +85,24 @@
         </div>
 
         <div class="hidden md:block">
-            <img src="HandLeft.png" class="absolute left-0 bottom-0 w-[375px] h-auto max-w-[calc(50vw-110px)] max-h-[calc(100vh-510px)] object-contain object-left -z-10">
-            <img src="HandRight.png" class="absolute right-0 bottom-0 w-[375px] h-auto max-w-[calc(50vw-110px)] max-h-[calc(100vh-510px)] object-contain object-right -z-10">
+            <img src="HandLeft.png"
+                class="absolute left-0 bottom-0 w-[375px] h-auto max-w-[calc(50vw-110px)] max-h-[calc(100vh-510px)] object-contain object-left -z-10">
+            <img src="HandRight.png"
+                class="absolute right-0 bottom-0 w-[375px] h-auto max-w-[calc(50vw-110px)] max-h-[calc(100vh-510px)] object-contain object-right -z-10">
         </div>
 
         <img src="HandCenter.png" class="w-full md:hidden">
-        
+
     </div>
+
+    <!-- <section class="bg-white rounded-t-lg py-12">
+        <div class="flex flex-col items-center px-8 max-w-6xl mx-auto">
+            Maecenas condimentum quam eu laoreet finibus sapien velit vestibulum nunc eu posuere magna neque sit amet
+            magna. Phasellus mi ligula lacinia quis eleifend eget convallis vitae nisl. Nulla porta lorem elit quis
+            scelerisque purus maximus at. Sed suscipit convallis orci id ultrices. Suspendisse efficitur metus sit amet
+            sapien tristique eu vulputate est consectetur.
+        </div>
+    </section> -->
 </body>
 
 </html>
