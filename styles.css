@@ -2,9 +2,11 @@
     --primary: #6B4E34;
     --primary-dark: #4d3725;
     --bg-gradient-from: #FFF4E0;
+    --bg-light: #e6dace;
 }
 
 body {
+    background-color: var(--bg-light);
     color: var(--primary);
     font-family: 'Inter', sans-serif;
 }
@@ -35,6 +37,7 @@ h1, h2, h3, p {
 }
 
 footer {
+    background: #FFF4E0;
     color: var(--primary);
 }
 
