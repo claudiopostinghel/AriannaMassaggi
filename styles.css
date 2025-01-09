@@ -1,7 +1,7 @@
 :root {
-    --primary: #2D2D6F;
-    --primary-dark: #1E1E4A;
-    --bg-gradient-from: #E6E6FF;
+    --primary: #6B4E34;
+    --primary-dark: #4d3725;
+    --bg-gradient-from: #FFF4E0;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 #hero-section {
-    background: #E6E6FF;
+    background: #FFF4E0;
 }
 
 .cta-button {
@@ -50,5 +50,5 @@ footer a:hover {
 
 img {
     min-height: 200px;
-    background-color: #E6E6FF;
+    background-color: #FFF4E0;
 }
