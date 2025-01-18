@@ -47,10 +47,11 @@
 
 <body class="relative">
     <div id="hero-section" class="relative w-full overflow-visible">
-        <img src="acqua.png" alt="" class="absolute left-[20%] top-[30%] -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[1200px] opacity-30 z-0">
-        
+        <img src="acqua.png" alt=""
+            class="absolute left-[20%] top-[30%] -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[1200px] opacity-30 z-0">
+
         <div id="hero-container" class="flex flex-col md:flex-row justify-between px-8 py-12 max-w-7xl mx-auto gap-16">
-            <div class="md:w-1/2 flex flex-col md:items-start z-20">
+            <div class="md:w-1/2 flex flex-col justify-center md:items-start z-20">
                 <div class="text-2xl mb-6">Arianna Postinghel</div>
 
                 <div class="relative">
@@ -63,8 +64,8 @@
                     </h1>
                 </div>
 
-                <p class="font-light text-[20px] max-w-2xl leading-[130%] text-left mt-8 mb-12">
-                    Specializzata in massaggi terapeutici e di benessere. Collaboro con centri estetici, palestre e strutture del benessere per portare il mio servizio professionale dove serve.
+                <p class="font-light max-w-2xl leading-[130%] text-left mt-8 mb-12">
+                    Offro massaggi personalizzati che promuovono il benessere fisico e mentale, garantendo un’esperienza unica in un ambiente sicuro e accogliente
                 </p>
 
                 <button class="cta-button">
@@ -78,91 +79,164 @@
         </div>
     </div>
 
+    <!-- <div class="px-8 py-24 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="flex flex-col items-start">
+                <div class="w-12 h-12 mb-6">
+                    x
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Promozione del benessere fisico e mentale</h3>
+                <p class="font-light leading-relaxed">
+                    Offrire massaggi personalizzati che favoriscano equilibrio e serenità, adattati alle esigenze individuali dopo un'analisi preliminare.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-start">
+                <div class="w-12 h-12 mb-6">
+                    x
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Creazione di un ambiente sicuro e accogliente</h3>
+                <p class="font-light leading-relaxed">
+                    Garantire un'esperienza unica e di qualità, mettendo al centro il comfort e la fiducia del cliente.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-start">
+                <div class="w-12 h-12 mb-6">
+                    x
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Crescita professionale e riferimento locale</h3>
+                <p class="font-light leading-relaxed">
+                    Diventare un punto di riferimento per i massaggi personalizzati nella propria zona, migliorando continuamente le competenze per soddisfare al meglio i clienti.
+                </p>
+            </div>
+        </div>
+    </div> -->
+
     <div class="px-8 pb-24 max-w-7xl mx-auto pt-12">
         <h2 class="text-3xl font-semibold mb-4 text-left">I Miei Massaggi</h2>
 
         <p class="font-light leading-relaxed mb-12 max-w-2xl text-left">
-            Offro una gamma completa di massaggi terapeutici e di benessere. Mi sposto presso palestre, centri estetici e strutture partner per garantire un servizio comodo e professionale ai miei clienti.
+            Offro massaggi personalizzati per il rilassamento, il recupero fisico e il benessere generale. Ogni
+            trattamento è pensato per rispondere alle esigenze specifiche dei clienti, combinando tecniche diverse per
+            garantire qualità e risultati.
+
         </p>
-        
+        <!-- <p class="font-light leading-relaxed mb-12 max-w-2xl text-left">
+            Mi sposto presso palestre, centri estetici e strutture partner per garantire un servizio comodo e
+            professionale ai miei clienti.
+        </p> -->
+
         <div class="flex flex-col md:flex-row md:gap-8 mb-12">
             <div class="flex flex-col md:w-1/2">
                 <div class="mb-4">
-                    <button class="w-full flex justify-start text-xl font-semibold mb-2 hover:opacity-80" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                    <button class="w-full flex justify-start text-xl font-semibold mb-2 hover:opacity-80"
+                        onclick="this.nextElementSibling.classList.toggle('hidden')">
                         <span class="text-left">IL MASSAGGIO RILASSANTE</span>
                         <svg class="w-5 h-5 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <p class="font-light leading-relaxed hidden">
                         Il massaggio rilassante ha una leggera pressione e delle manualità calde e avvolgenti.
-                        Mira principalmente al miglioramento dello stato di benessere della persona. Stimola della produzione di endorfine migliorando la qualità del sonno, la memoria e della concentrazione.
+                        Mira principalmente al miglioramento dello stato di benessere della persona. Stimola della
+                        produzione di endorfine migliorando la qualità del sonno, la memoria e della concentrazione.
                     </p>
                 </div>
 
                 <div class="mb-4">
-                    <button class="w-full flex justify-between text-xl font-semibold mb-2 hover:opacity-80" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                    <button class="w-full flex justify-between text-xl font-semibold mb-2 hover:opacity-80"
+                        onclick="this.nextElementSibling.classList.toggle('hidden')">
                         <span class="text-left">IL MASSAGGIO SVEDESE</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <p class="font-light leading-relaxed hidden">
-                        Il massaggio svedese, chiamato anche massaggio classico, si caratterizza per l'esecuzione di differenti ma ben precise manipolazioni (sfioramenti, sfregamenti, impastamenti, frizioni, percussioni) di intensità più o meno elevata. Generalmente, è prevista la manipolazione dell'intero corpo ma, a seconda delle esigenze del massaggiato, è possibile manipolare anche solo alcune aree.
+                        Il massaggio svedese, chiamato anche massaggio classico, si caratterizza per l'esecuzione di
+                        differenti ma ben precise manipolazioni (sfioramenti, sfregamenti, impastamenti, frizioni,
+                        percussioni) di intensità più o meno elevata. Generalmente, è prevista la manipolazione
+                        dell'intero corpo ma, a seconda delle esigenze del massaggiato, è possibile manipolare anche
+                        solo alcune aree.
                     </p>
                 </div>
 
                 <div class="mb-4">
-                    <button class="w-full flex justify-between text-xl font-semibold mb-2 hover:opacity-80" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                    <button class="w-full flex justify-between text-xl font-semibold mb-2 hover:opacity-80"
+                        onclick="this.nextElementSibling.classList.toggle('hidden')">
                         <span class="text-left">IL MASSAGGIO DECONTRATTURANTE</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <p class="font-light leading-relaxed hidden">
-                        Il massaggio decontratturante è mirato a sciogliere le contratture muscolari che si formano a causa di tensioni, posture scorrette o stress. Questo tipo di massaggio lavora in profondità per rilassare i muscoli, alleviare il dolore e migliorare la mobilità. E indicato per chi soffre di dolori muscolari dovuti a uno stile di vita sedentario o a sforzi specifici, anche senza essere uno sportivo.
+                        Il massaggio decontratturante è mirato a sciogliere le contratture muscolari che si formano a
+                        causa di tensioni, posture scorrette o stress. Questo tipo di massaggio lavora in profondità per
+                        rilassare i muscoli, alleviare il dolore e migliorare la mobilità. E indicato per chi soffre di
+                        dolori muscolari dovuti a uno stile di vita sedentario o a sforzi specifici, anche senza essere
+                        uno sportivo.
                     </p>
                 </div>
             </div>
 
             <div class="flex flex-col md:w-1/2">
                 <div class="mb-4">
-                    <button class="w-full flex justify-between text-xl font-semibold mb-2 hover:opacity-80" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                    <button class="w-full flex justify-between text-xl font-semibold mb-2 hover:opacity-80"
+                        onclick="this.nextElementSibling.classList.toggle('hidden')">
                         <span class="text-left">IL MASSAGGIO SPORTIVO</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <p class="font-light leading-relaxed hidden">
-                        Il massaggio sportivo, invece, è pensato per chi pratica sport, sia a livello professionale che amatoriale. Può essere eseguito prima dell'attività fisica, per riscaldare i muscoli e prepararli allo sforzo, oppure dopo, per favorire il recupero, ridurre la rigidità e prevenire gli infortuni.
-                        Questo massaggio combina diverse tecniche (come lo stretching e le percussioni) per migliorare l'elasticità muscolare, prevenire crampi e migliorare le performance.
+                        Il massaggio sportivo, invece, è pensato per chi pratica sport, sia a livello professionale che
+                        amatoriale. Può essere eseguito prima dell'attività fisica, per riscaldare i muscoli e
+                        prepararli allo sforzo, oppure dopo, per favorire il recupero, ridurre la rigidità e prevenire
+                        gli infortuni.
+                        Questo massaggio combina diverse tecniche (come lo stretching e le percussioni) per migliorare
+                        l'elasticità muscolare, prevenire crampi e migliorare le performance.
                     </p>
                 </div>
 
                 <div class="mb-4">
-                    <button class="w-full flex justify-between text-xl font-semibold mb-2 hover:opacity-80" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                    <button class="w-full flex justify-between text-xl font-semibold mb-2 hover:opacity-80"
+                        onclick="this.nextElementSibling.classList.toggle('hidden')">
                         <span class="text-left">IL MASSAGGIO DRENANTE</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <p class="font-light leading-relaxed hidden">
-                        Il massaggio drenante è una tecnica studiata per ridurre la ritenzione idrica, attenua il gonfiore e la sensazione di pesantezza nelle gambe. Favorisce l'eliminazione delle tossine accumulate, migliorando la naturale purificazione dell'organismo.
-                        Stimola il ritorno venoso e la circolazione linfatica, aiuta a ridurre la comparsa della cellulite e a migliorare l'elasticità della pelle.
+                        Il massaggio drenante è una tecnica studiata per ridurre la ritenzione idrica, attenua il
+                        gonfiore e la sensazione di pesantezza nelle gambe. Favorisce l'eliminazione delle tossine
+                        accumulate, migliorando la naturale purificazione dell'organismo.
+                        Stimola il ritorno venoso e la circolazione linfatica, aiuta a ridurre la comparsa della
+                        cellulite e a migliorare l'elasticità della pelle.
                     </p>
                 </div>
 
                 <div class="mb-0">
-                    <button class="w-full flex justify-between text-xl font-semibold mb-2 hover:opacity-80" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                    <button class="w-full flex justify-between text-xl font-semibold mb-2 hover:opacity-80"
+                        onclick="this.nextElementSibling.classList.toggle('hidden')">
                         <span class="text-left">IL MASSAGGIO MATERNITY</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <p class="font-light leading-relaxed hidden">
-                        Il massaggio maternity, eseguibile dal secondo trimestre di gravidanza, è un momento in cui la mamma può ricevere una coccola che rilasserà non solo lei ma anche il bimbo che porta in grembo.
-                        Questo speciale massaggio riduce stress, ansia e insonnia, allevia tensioni e dolori muscolari, riduce il gonfiore delle gambe e piedi donando una sensazione di leggerezza immediata.
-                        Le dolci e avvolgenti manovre stimolano la produzione di endorfine, riducono il mal di testa, migliorano la circolazione sanguigna e linfatica, preparando allo stesso tempo la muscolatura al parto.
+                        Il massaggio maternity, eseguibile dal secondo trimestre di gravidanza, è un momento in cui la
+                        mamma può ricevere una coccola che rilasserà non solo lei ma anche il bimbo che porta in grembo.
+                        Questo speciale massaggio riduce stress, ansia e insonnia, allevia tensioni e dolori muscolari,
+                        riduce il gonfiore delle gambe e piedi donando una sensazione di leggerezza immediata.
+                        Le dolci e avvolgenti manovre stimolano la produzione di endorfine, riducono il mal di testa,
+                        migliorano la circolazione sanguigna e linfatica, preparando allo stesso tempo la muscolatura al
+                        parto.
                     </p>
                 </div>
             </div>
@@ -175,16 +249,24 @@
         <div class="flex items-center justify-center mb-24">
             <div class="h-[1px] bg-black/20 flex-1"></div>
             <svg class="w-8 h-8 mx-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11">
+                </path>
             </svg>
             <div class="h-[1px] bg-black/20 flex-1"></div>
         </div>
 
         <div class="flex flex-col md:flex-row items-center gap-12 mb-24">
             <div class="md:w-1/2">
-                <h2 class="text-3xl font-semibold mb-4">Esperienza Professionale</h2>
+                <h2 class="text-3xl font-semibold mb-4">Chi sono</h2>
+                <p class="font-light leading-relaxed mb-4">
+                    La mia passione per il benessere mi ha portato a qualificarmi come Estetista e Tecnica dei
+                    Trattamenti Estetici, con una specializzazione nel settore Termale.
+                </p>
                 <p class="font-light leading-relaxed">
-                    Esperienza consolidata nel settore del benessere, specializzata in diverse tecniche di massaggio. Ho lavorato in rinomati centri benessere, perfezionando le mie competenze e sviluppando un approccio personalizzato per ogni cliente.
+                    La mia passione per il benessere mi ha portato a perfezionarmi in oltre 20 tecniche di massaggio.
+                    Offro
+                    trattamenti personalizzati, mirati al relax e al miglioramento del benessere psicofisico.
                 </p>
             </div>
             <img src="materials.jpg" alt="Massaggi professionali" class="md:w-1/2 rounded-lg shadow-lg">
@@ -192,9 +274,12 @@
 
         <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-24">
             <div class="md:w-1/2">
-                <h2 class="text-3xl font-semibold mb-4">Approccio Professionale</h2>
+                <h2 class="text-3xl font-semibold mb-4">Il Mio Approccio al Benessere</h2>
                 <p class="font-light leading-relaxed">
-                    Il mio obiettivo è portare benessere e relax ai miei clienti attraverso un servizio professionale e personalizzato. La flessibilità delle location mi permette di raggiungere più clienti e offrire un servizio conveniente e di qualità.
+                    Il mio obiettivo è portare benessere e relax attraverso un servizio professionale e personalizzato.
+                    Dedico attenzione alle esigenze di ogni cliente con un colloquio iniziale, per scegliere la tecnica
+                    più adatta e garantire un trattamento efficace. Unendo empatia e professionalità, creo un ambiente
+                    rilassante e curato, offrendo flessibilità nelle location per un servizio comodo e di alta qualità.
                 </p>
             </div>
             <img src="research.jpg" alt="Approccio professionale" class="md:w-1/2 rounded-lg shadow-lg">
@@ -202,10 +287,17 @@
 
         <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
-                <h2 class="text-3xl font-semibold mb-4">Collaborazioni</h2>
-                <p class="font-light leading-relaxed">
-                    Sono disponibile per collaborazioni con palestre, centri estetici, farmacie e strutture del benessere. Creo programmi personalizzati in base alle esigenze della struttura e dei suoi clienti.
+                <h2 class="text-3xl font-semibold mb-4">Collaboriamo per il Benessere</h2>
+                <p class="font-light leading-relaxed mb-4">
+                    Sono sempre aperta a nuove collaborazioni con centri fitness, palestre, spa e professionisti del
+                    settore wellness.
                 </p>
+                    <p class="font-light leading-relaxed mb-4">
+                    Insieme possiamo offrire ai clienti un’esperienza completa, combinando trattamenti
+                    personalizzati e tecniche di alta qualità per migliorare il loro benessere. Contattami per discutere
+                    le tue esigenze e creare un progetto su misura.
+                </p>
+                <a href="mailto:info@ariannamassaggi.it" class="underline">Scrivimi a info@ariannamassaggi.it</a>
             </div>
             <img src="ted.jpg" alt="Collaborazioni" class="md:w-1/2 rounded-lg shadow-lg">
         </div>
@@ -218,9 +310,9 @@
                 <p class="font-light">Massaggiatrice Professionale</p>
             </div>
             <div class="flex gap-8">
-                <a href="mailto:giulia.rossi@gmail.com" class="hover:opacity-80">Email</a>
-                <a href="https://www.linkedin.com/" class="hover:opacity-80">LinkedIn</a>
-                <a href="https://www.instagram.com/" class="hover:opacity-80">Instagram</a>
+                <a href="mailto:info@ariannamassaggi.it" class="hover:opacity-80">Email</a>
+                <a href="https://www.linkedin.com/AriannaMassaggi" class="hover:opacity-80">LinkedIn</a>
+                <a href="https://www.instagram.com/arianna_massaggi/" class="hover:opacity-80">Instagram</a>
             </div>
         </div>
     </footer>
