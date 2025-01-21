@@ -50,7 +50,8 @@
         <img src="acqua.png" alt=""
             class="absolute left-[20%] top-[30%] -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[1200px] opacity-30 z-0">
 
-        <div id="hero-container" class="flex flex-col md:flex-row justify-between px-8 py-12 max-w-7xl mx-auto gap-16">
+        <div id="hero-container" class="flex flex-col md:flex-row justify-between px-8 py-12 max-w-7xl mx-auto gap-16 overflow-hidden
+        ">
             <div class="md:w-1/2 flex flex-col justify-center md:items-start z-20">
                 <div class="text-2xl mb-6">Arianna Postinghel</div>
 
@@ -115,7 +116,7 @@
         </div>
     </div> -->
 
-    <div class="px-8 pb-24 max-w-7xl mx-auto pt-12">
+    <div class="px-8 max-w-7xl mx-auto pt-12">
         <h2 class="text-3xl font-semibold mb-4 text-left">I Miei Massaggi</h2>
 
         <p class="font-light leading-relaxed mb-12 max-w-2xl text-left">
@@ -242,7 +243,7 @@
         </div>
 
         <div class="flex justify-center mb-24">
-            <img src="immagine1.png" alt="Massaggi" class="w-full max-w-2xl rounded-lg shadow-lg">
+            <img src="massages.jpeg" alt="Massaggi" class="w-full rounded-lg shadow-lg">
         </div>
 
         <div class="flex items-center justify-center mb-24">
@@ -268,10 +269,10 @@
                     trattamenti personalizzati, mirati al relax e al miglioramento del benessere psicofisico.
                 </p>
             </div>
-            <img src="materials.jpg" alt="Massaggi professionali" class="md:w-1/2 rounded-lg shadow-lg">
+            <img src="Photo1.jpeg" alt="Massaggi professionali" class="md:w-1/2 rounded-lg shadow-lg">
         </div>
 
-        <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-24">
+        <div class="flex flex-col md:flex-row-reverse items-center gap-12">
             <div class="md:w-1/2">
                 <h2 class="text-3xl font-semibold mb-4">Il Mio Approccio al Benessere</h2>
                 <p class="font-light leading-relaxed">
@@ -281,24 +282,39 @@
                     rilassante e curato, offrendo flessibilità nelle location per un servizio comodo e di alta qualità.
                 </p>
             </div>
-            <img src="research.jpg" alt="Approccio professionale" class="md:w-1/2 rounded-lg shadow-lg">
+            <img src="Photo2.jpeg" alt="Approccio professionale" class="md:w-1/2 rounded-lg shadow-lg">
         </div>
+    </div>
 
-        <div class="flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <h2 class="text-3xl font-semibold mb-4">Collaboriamo per il Benessere</h2>
-                <p class="font-light leading-relaxed mb-4">
+    <div class="px-8 py-24 max-w-7xl mx-auto relative">
+        
+        <div class="bg-[var(--primary)] rounded-2xl relative mx-auto max-w-4xl shadow-2xl">
+            <div class="absolute inset-0 opacity-80 md:opacity-50 rounded-2xl overflow-hidden" style="background-image: url('decoration2.png'); background-position: right; background-repeat: no-repeat; background-size: auto 100%;"></div>
+            <div class="p-24 max-w-2xl relative">
+                <h2 class="text-3xl font-semibold mb-4 text-[var(--bg-light)]">Collaboriamo per il Benessere</h2>
+                <p class="font-light leading-relaxed mb-4 text-[var(--bg-light)]">
                     Sono sempre aperta a nuove collaborazioni con centri fitness, palestre, spa e professionisti del
                     settore wellness.
                 </p>
-                <p class="font-light leading-relaxed mb-4">
+                <p class="font-light leading-relaxed mb-8 text-[var(--bg-light)]">
                     Insieme possiamo offrire ai clienti un'esperienza completa, combinando trattamenti
                     personalizzati e tecniche di alta qualità per migliorare il loro benessere. Contattami per discutere
                     le tue esigenze e creare un progetto su misura.
                 </p>
-                <a href="mailto:info@ariannamassaggi.it" class="underline">Scrivimi a info@ariannamassaggi.it</a>
+                <div class="relative">
+                    <button class="px-8 py-3 rounded-full border border-[var(--bg-light)] text-[var(--bg-light)] hover:bg-[var(--bg-light)] hover:text-[var(--primary)] transition-colors" onclick="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')">Scrivimi a info@ariannamassaggi.it</button>
+                    
+                    <div class="hidden flex gap-4 items-center">
+                        <a href="mailto:info@ariannamassaggi.it" class="w-[240px] px-6 py-3 rounded-full border border-[var(--bg-light)] text-[var(--bg-light)] hover:bg-[var(--bg-light)] hover:text-[var(--primary)] transition-colors text-center">Apri il client email</a>
+                        <button onclick="navigator.clipboard.writeText('info@ariannamassaggi.it'); this.textContent = 'Email copiata!'; setTimeout(() => { this.textContent = 'Copia email'; this.parentElement.classList.add('hidden'); this.parentElement.previousElementSibling.classList.remove('hidden'); }, 2000)" class="w-[240px] px-6 py-3 rounded-full border border-[var(--bg-light)] text-[var(--bg-light)] hover:bg-[var(--bg-light)] hover:text-[var(--primary)] transition-colors">Copia email</button>
+                        <button onclick="this.parentElement.classList.add('hidden'); this.parentElement.previousElementSibling.classList.remove('hidden')" class="w-10 h-10 rounded-full border border-[var(--bg-light)] text-[var(--bg-light)] hover:bg-[var(--bg-light)] hover:text-[var(--primary)] transition-colors flex items-center justify-center">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <img src="ted.jpg" alt="Collaborazioni" class="md:w-1/2 rounded-lg shadow-lg">
         </div>
     </div>
 

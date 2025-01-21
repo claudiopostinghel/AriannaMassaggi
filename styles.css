@@ -6,13 +6,13 @@
 }
 
 body {
-    background-color: var(--bg-light);
+    background-color: #FFF4E0;
     color: var(--primary);
     font-family: 'Inter', sans-serif;
 }
 
 #hero-section {
-    background: #FFF4E0;
+    background: var(--bg-light);
 }
 
 .cta-button {
@@ -37,7 +37,7 @@ h1, h2, h3, p {
 }
 
 footer {
-    background: #FFF4E0;
+    background: var(--bg-light);
     color: var(--primary);
 }
 
@@ -53,5 +53,9 @@ footer a:hover {
 
 img {
     min-height: 200px;
-    background-color: #FFF4E0;
+    background-color: var(--bg-light);
+}
+
+.bg-neutral-50 {
+    background-color: var(--bg-light);
 }
