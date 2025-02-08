@@ -59,3 +59,7 @@ img {
 .bg-neutral-50 {
     background-color: var(--bg-light);
 }
+
+* {
+    /* border: 1px solid red !important; */
+}
