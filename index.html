@@ -47,25 +47,24 @@
 
 <body class="relative">
 
-    <section id="hero-section" class="h-screen relative w-full overflow-visible flex flex-col">
+    <section id="hero-section" class="h-auto sm:h-screen relative w-full overflow-visible flex flex-col">
 
         <div class="sticky top-0 left-0 right-0 bg-black/5 z-50">
             <div class="px-8 max-w-7xl mx-auto py-4 flex justify-between items-center">
                 <div class="text-lg font-semibold flex items-center gap-2">
-                    <!-- <img src="favicon.png" alt="Logo" class="w-6 h-6 object-contain"> -->
                     <span>Arianna Postinghel</span>
                 </div>
             </div>
         </div>
 
-        
-        <div id="hero-container"
-        class="px-8 py-24 w-full h-full max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center relative overflow-visible">
-        
-        <img src="acqua.png" alt=""
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[1200px] opacity-30 z-0">
 
-            <div class="md:w-1/2 relative z-10">
+        <div id="hero-container"
+            class="px-8 pt-12 pb-0 md:py-24 w-full h-full max-w-7xl mx-auto flex flex-col sm:flex-row gap-16 relative overflow-hidden">
+
+            <img src="acqua.png" alt=""
+                class="acqua absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[1200px] opacity-30 z-0" />
+
+            <div class="w-full sm:w-1/2 relative z-10 text-left flex flex-col justify-center">
                 <div class="text-2xl mb-6">Arianna Postinghel</div>
 
                 <div class="relative">
@@ -81,21 +80,21 @@
                     unica in un ambiente sicuro e accogliente.
                 </p>
 
-                <button class="cta-button">
+                <a href="https://wa.me/393403419861" target="_blank"
+                    class="cta-button relative w-fit flex items-center">
+                    <img src="whatsapp.svg" alt="WhatsApp" class="w-4 max-h-4 mr-2" />
                     Prenota un massaggio
-                </button>
+                </a>
             </div>
 
-            <div class="md:w-1/2">
-                
+
+            <div class="relative sm:absolute right-0 bottom-0 w-full sm:w-3/5 flex justify-center z-20">
+                <img src="Arianna Background Removed.png" alt="Arianna Postinghel"
+                    class="w-[80vw] md:w-full h-full max-h-[95vh] object-contain object-right [background:none]">
             </div>
 
         </div>
 
-        <div class="absolute right-0 bottom-0 w-1/2 flex justify-center z-20">
-            <img src="Arianna Background Removed.png" alt="Arianna Postinghel"
-                class="w-full h-full max-h-[95vh] object-contain object-left">
-        </div>
     </section>
 
 
@@ -111,11 +110,23 @@
                         offrire un servizio flessibile e di alta qualità.
                     </p>
 
-                    <p class="font-light leading-relaxed mb-4">
-                        • Estetista e Tecnica dei Trattamenti Estetici, con specializzazione Termale.<br>
-                        • Quasi 10 anni di esperienza e in continua crescita<br>
-                        • Sto conseguendo il diploma in Massaggio Tecnico-Sportivo presso la scuola "Diabasi".
-                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-2 mb-4">
+                <div class="px-4 py-2 rounded-xl bg-black/5 flex-1">
+                    <div class="font-semibold mb-1">Formazione Estetica</div>
+                    Estetista e Tecnica dei Trattamenti Estetici, con specializzazione Termale e formazione nelle
+                    tecniche di massaggio
+                </div>
+                <div class="px-4 py-2 rounded-xl bg-black/5 flex-1">
+                    <div class="font-semibold mb-1">Esperienza Decennale</div>
+                    Quasi 10 anni di esperienza in rinomati centri benessere in Italia e all'estero in massaggi e
+                    rituali
+                </div>
+                <div class="px-4 py-2 rounded-xl bg-black/5 flex-1">
+                    <div class="font-semibold mb-1">Sempre in crescita</div>
+                    Conseguendo il Diploma di Operatore Professionale in Massaggio Tecnico-Sportivo alla scuola Diabasi
                 </div>
             </div>
 
@@ -147,146 +158,379 @@
                 Offro massaggi e rituali per garantire benessere e relax.
             </p>
             <p class="font-light leading-relaxed mb-12 max-w-2xl text-left">
-                Creo un ambiente curato e rilassante, con flessibilità nelle location, e ascolto le esigenze di ogni cliente
+                Creo un ambiente curato e rilassante, con flessibilità nelle location, e ascolto le esigenze di ogni
+                cliente
                 per scegliere la tecnica più adatta e offrire un servizio personalizzato.
             </p>
 
-            <div class="flex flex-col md:flex-row md:gap-8 mb-12">
-                <div class="flex flex-col md:w-1/2">
-                    <div class="mb-4">
-                        <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span>IL RILASSANTE</span>
-                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <p class="font-light leading-relaxed hidden">
-                            Il massaggio rilassante ha una leggera pressione e delle manualità calde e avvolgenti. Mira principalmente al miglioramento dello stato di benessere della persona. Stimola la produzione di endorfine migliorando la qualità del sonno, la memoria e la concentrazione.
-                        </p>
-                    </div>
+            <div class="flex flex-wrap gap-2">
 
-                    <div class="mb-4">
-                        <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span>LO SVEDESE</span>
-                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <p class="font-light leading-relaxed hidden">
-                            Il massaggio svedese si caratterizza per l'esecuzione di differenti ma ben precise manipolazioni
-                            (sfioramenti, sfregamenti, impastamenti, frizioni, percussioni) di intensità più o meno elevata.
-                            Generalmente, è prevista la manipolazione dell'intero corpo ma, a seconda delle esigenze, è
-                            possibile manipolare anche solo una o alcune aree.
-                        </p>
-                    </div>
-
-                    <div class="mb-4">
-                        <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span>IL DECONTRATTURANTE</span>
-                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <p class="font-light leading-relaxed hidden">
-                            Il massaggio decontratturante è mirato a sciogliere le contratture muscolari che si formano a
-                            causa di tensioni, posture scorrette o stress. Questo tipo di massaggio lavora in profondità per
-                            rilassare i muscoli, alleviare il dolore e migliorare la mobilità. È indicato per chi soffre di
-                            dolori muscolari dovuti a uno stile di vita sedentario o a sforzi specifici, anche senza essere
-                            uno sportivo.
-                        </p>
-                    </div>
-
-                    <div class="mb-4">
-                        <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span>LO SPORTIVO</span>
-                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <p class="font-light leading-relaxed hidden">
-                            Il massaggio sportivo, invece, è pensato per chi pratica sport, sia a livello professionale che
-                            amatoriale. Può essere eseguito prima dell'attività fisica, per riscaldare i muscoli e
-                            prepararli allo sforzo, oppure dopo, per favorire il recupero, ridurre la rigidità e prevenire
-                            gli infortuni. Questo massaggio combina diverse tecniche (come lo stretching e le percussioni)
-                            per migliorare l'elasticità muscolare, prevenire crampi e migliorare le performance.
-                        </p>
-                    </div>
-
-                    <div class="mb-4">
-                        <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span>IL BAMBOO</span>
-                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <p class="font-light leading-relaxed hidden">
-                            Il massaggio Bamboo viene eseguito con l'ausilio di strumenti in legno studiati per entrare in profondità senza far sentire alla persona eccessivo dolore, Inoltre scolpisce, modella il corpo e ne aumenta la forza.
-                        </p>
-                    </div>
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button
+                        class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl"
+                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>LO SVEDESE</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il massaggio svedese si caratterizza per l'esecuzione di differenti ma ben precise
+                        manipolazioni
+                        (sfioramenti, sfregamenti, impastamenti, frizioni, percussioni) di intensità più o meno
+                        elevata.
+                        Generalmente, è prevista la manipolazione dell'intero corpo ma, a seconda delle esigenze, è
+                        possibile manipolare anche solo una o alcune aree.
+                    </p>
                 </div>
 
-                <div class="flex flex-col md:w-1/2">
-                    <div class="mb-4">
-                        <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span>IL DRENANTE</span>
-                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <p class="font-light leading-relaxed hidden">
-                            Il massaggio drenante è una tecnica studiata per ridurre la ritenzione idrica, attenua il
-                            gonfiore e la sensazione di pesantezza nelle gambe. Favorisce l'eliminazione delle tossine
-                            accumulate, migliorando la naturale purificazione dell'organismo. Stimola il ritorno venoso e la
-                            circolazione linfatica, aiuta a ridurre la comparsa della cellulite e a migliorare l'elasticità
-                            della pelle.
-                        </p>
-                    </div>
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button
+                        class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl"
+                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>IL RILASSANTE</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il massaggio rilassante ha una leggera pressione e delle manualità calde e avvolgenti. Mira
+                        principalmente al miglioramento dello stato di benessere della persona. Stimola la
+                        produzione di endorfine migliorando la qualità del sonno, la memoria e la concentrazione.
+                    </p>
+                </div>
 
-                    <div class="mb-4">
-                        <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span>IL MATERNITY</span>
-                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <p class="font-light leading-relaxed hidden">
-                            Il massaggio maternity, eseguibile dal secondo trimestre di gravidanza, è un momento in cui la
-                            mamma può ricevere una coccola che rilasserà non solo lei ma anche il bimbo che porta in grembo.
-                            Questo speciale massaggio riduce stress, ansia e insonnia, allevia tensioni e dolori muscolari,
-                            riduce il gonfiore delle gambe e piedi donando una sensazione di leggerezza immediata. Le dolci
-                            e avvolgenti manovre stimolano la produzione di endorfine, riducono il mal di testa, migliorano
-                            la circolazione sanguigna e linfatica, preparando allo stesso tempo la muscolatura al parto.
-                        </p>
-                    </div>
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button
+                        class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl"
+                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>IL DECONTRATTURANTE</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il massaggio decontratturante è mirato a sciogliere le contratture muscolari che si formano
+                        a
+                        causa di tensioni, posture scorrette o stress. Questo tipo di massaggio lavora in profondità
+                        per
+                        rilassare i muscoli, alleviare il dolore e migliorare la mobilità. È indicato per chi soffre
+                        di
+                        dolori muscolari dovuti a uno stile di vita sedentario o a sforzi specifici, anche senza
+                        essere
+                        uno sportivo.
+                    </p>
+                </div>
 
-                    <div class="mb-4">
-                        <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span>IL CONNETTIVALE</span>
-                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <p class="font-light leading-relaxed hidden">
-                            Il massaggio Connettivale è il più efficace approccio dinamico utile per ripristinare le restrizioni della fascia muscolare. Allevia la tensione cronica, migliora il movimento, la postura e la consapevolezza di sé e dei propri muscoli. Agisce sul tessuto connettivo attraverso manipolazioni che stimolano la parte terminale del sistema simpatico del derma.
-                        </p>
-                    </div>
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button
+                        class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl"
+                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>IL DRENANTE</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il massaggio drenante è una tecnica studiata per ridurre la ritenzione idrica, attenua il
+                        gonfiore e la sensazione di pesantezza nelle gambe. Favorisce l'eliminazione delle tossine
+                        accumulate, migliorando la naturale purificazione dell'organismo. Stimola il ritorno venoso
+                        e la
+                        circolazione linfatica, aiuta a ridurre la comparsa della cellulite e a migliorare
+                        l'elasticità
+                        della pelle.
+                    </p>
+                </div>
 
-                    <div class="mb-4">
-                        <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                            <span>IL MIOFASCIALE</span>
-                            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <p class="font-light leading-relaxed hidden">
-                            Il massaggio Miofasciale è una tecnica che aiuta a mantenere in stato ottimale un sottile strato di tessuto connettivo, noto come fascia, che ricopre tutte le strutture del corpo umano, proteggendole e collegando tra loro a formare una unità strutturale. Attraverso l'applicazione di una pressione costante e l'uso di movimenti lenti e profondi, questo massaggio lavora per sciogliere le aderenze e le restrizioni della fascia, migliorando la mobilità e riducendo il dolore.
-                        </p>
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button
+                        class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl"
+                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>LO SPORTIVO</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il massaggio sportivo, invece, è pensato per chi pratica sport, sia a livello professionale
+                        che
+                        amatoriale. Può essere eseguito prima dell'attività fisica, per riscaldare i muscoli e
+                        prepararli allo sforzo, oppure dopo, per favorire il recupero, ridurre la rigidità e
+                        prevenire
+                        gli infortuni. Questo massaggio combina diverse tecniche (come lo stretching e le
+                        percussioni)
+                        per migliorare l'elasticità muscolare, prevenire crampi e migliorare le performance.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button
+                        class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl"
+                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>IL MATERNITY</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il massaggio maternity, eseguibile dal secondo trimestre di gravidanza, è un momento in cui
+                        la
+                        mamma può ricevere una coccola che rilasserà non solo lei ma anche il bimbo che porta in
+                        grembo.
+                        Questo speciale massaggio riduce stress, ansia e insonnia, allevia tensioni e dolori
+                        muscolari,
+                        riduce il gonfiore delle gambe e piedi donando una sensazione di leggerezza immediata. Le
+                        dolci
+                        e avvolgenti manovre stimolano la produzione di endorfine, riducono il mal di testa,
+                        migliorano
+                        la circolazione sanguigna e linfatica, preparando allo stesso tempo la muscolatura al parto.
+                    </p>
+                </div>
+
+                <!-- <div class="mb-4">
+                    <button
+                        class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl"
+                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>IL BAMBOO</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il massaggio Bamboo viene eseguito con l'ausilio di strumenti in legno studiati per entrare
+                        in profondità senza far sentire alla persona eccessivo dolore, Inoltre scolpisce, modella il
+                        corpo e ne aumenta la forza.
+                    </p>
+                </div> -->
+
+                <!-- <div class="mb-4">
+                    <button
+                        class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl"
+                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>IL CONNETTIVALE</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il massaggio Connettivale è il più efficace approccio dinamico utile per ripristinare le
+                        restrizioni della fascia muscolare. Allevia la tensione cronica, migliora il movimento, la
+                        postura e la consapevolezza di sé e dei propri muscoli. Agisce sul tessuto connettivo
+                        attraverso manipolazioni che stimolano la parte terminale del sistema simpatico del derma.
+                    </p>
+                </div> -->
+
+                <!-- <div class="mb-4">
+                    <button
+                        class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl"
+                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>IL MIOFASCIALE</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il massaggio Miofasciale è una tecnica che aiuta a mantenere in stato ottimale un sottile
+                        strato di tessuto connettivo, noto come fascia, che ricopre tutte le strutture del corpo
+                        umano, proteggendole e collegando tra loro a formare una unità strutturale. Attraverso
+                        l'applicazione di una pressione costante e l'uso di movimenti lenti e profondi, questo
+                        massaggio lavora per sciogliere le aderenze e le restrizioni della fascia, migliorando la
+                        mobilità e riducendo il dolore.
+                    </p>
+                </div> -->
+
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-xl font-semibold mb-4">Scegli il Tempo per il Tuo Benessere</h3>
+                <div class="flex flex-row gap-2">
+                    <div class="bg-black/5 p-4 rounded-xl flex-1">
+                        <div class="font-semibold">30 minuti</div>
+                        <p class="font-light">Perfetto per chi ha poco tempo o per trattare una zona specifica del corpo.</p>
+                    </div>
+                    <div class="bg-black/5 p-4 rounded-xl flex-1">
+                        <div class="font-semibold">60 minuti</div>
+                        <p class="font-light">Massaggio completo su una o più aree del corpo. Perfetto per un'esperienza equilibrata.</p>
+                    </div>
+                    <div class="bg-black/5 p-4 rounded-xl flex-1">
+                        <div class="font-semibold">90 minuti</div>
+                        <p class="font-light">Massaggio prolungato che tratta in dettaglio più zone del corpo e alleviare tensioni.</p>
+                    </div>
+                    <div class="bg-black/5 p-4 rounded-xl flex-1">
+                        <div class="font-semibold">120 minuti</div>
+                        <p class="font-light">Massaggio completo che tratta ogni zona del corpo con attenzione, ideale per un totale rilassamento e benessere profondo.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- FAQ -->
+    <section id="faq-section" class="py-12">
+        <div class="px-8 max-w-7xl mx-auto">
+            <h2 class="text-xl font-semibold mb-8 text-left">FAQ e Policy</h2>
+
+            <div class="flex flex-wrap gap-2">
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Come devo vestirmi?</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Durante il massaggio ti fornirò lo slip monouso per massimizzare il livello di igiene e per preservare il tuo abbigliamento dall'olio. Se potrai farlo, ti consiglio di presentarti al tuo appuntamento con vestiti pratici: abbastanza comodi ed elastici da poterli rimuovere e rimettere con facilità (come la classica t-shirt e pantaloni della tuta).
+                    </p>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Cosa devo fare prima del massaggio?</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Bevi acqua prima del massaggio per preparare il corpo. Evita pasti pesanti almeno 1-2 ore prima della seduta. Cerca di arrivare al massaggio rilassato, con la mente serena e senza fretta. Limita la caffeina, poiché può interferire con il rilassamento ed efficacia del massaggio.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Cosa devo fare dopo il massaggio?</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Idratati ancora: bevi molta acqua per aiutare il corpo a eliminare le tossine. Cerca di riposare e rilassarti per un po' dopo la seduta, evitando sforzi fisici intensi. Evita docce troppo calde e lascia al corpo il tempo di adattarsi.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Come capire se ho bisogno di un massaggio?</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il momento giusto per fare un massaggio dipende dalle tue esigenze e dal tuo stato fisico e mentale. Ecco alcune situazioni in cui potrebbe essere ideale programmare un massaggio:<br>
+                        • Dopo uno stress intenso<br>
+                        • Dopo l'attività fisica intensa<br>
+                        • Quando hai mal di schiena o tensione muscolare<br>
+                        • Per migliorare il sonno<br>
+                        • Durante un periodo di recupero fisico<br>
+                        • Per migliorare la circolazione<br>
+                        • Quando ti senti mentalmente esausto<br>
+                        • Quando vuoi prenderti cura di te stesso<br>
+                        • Quando pensi che avresti proprio bisogno di un massaggio
+                    </p>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Quando evitare un massaggio?</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Il massaggio può essere la soluzione a quasi tutto, tuttavia in alcune situazioni è da evitare.<br>
+                        Il massaggio è sconsigliato se:<br>
+                        • Hai febbre o infezioni<br>
+                        • Hai ferite aperte o infiammazioni<br>
+                        • Ti trovi nel primo trimestre di gravidanza<br>
+                        • Hai una condizione medica acuta (come una frattura o un'infiammazione grave)<br>
+                        • Hai problemi cardiaci gravi (senza consultare un medico)<br>
+                        • Hai una trombosi o problemi circolatori non trattati<br>
+                        • Hai appena fatto un pasto abbondante o assunto alcolici
+                    </p>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Condotta Clienti</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Questa attività si riserva il diritto di negare il servizio a chiunque per qualsiasi motivo. Adotto una politica di tolleranza ZERO verso comportamenti e/o sollecitazioni inappropriati. Se un cliente si comporta in un modo che viola queste politiche, la sua sessione verrà interrotta immediatamente e verrà addebitata l'intera tariffa del servizio. Al cliente verrà inoltre vietato qualsiasi appuntamento futuro.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Prenota il tuo appuntamento</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Tutti i nuovi clienti possono fissare il loro primo appuntamento via Whatsapp, Telegram o SMS, non vedo l'ora di incontrarti e lavorare con te!<br><br>
+                        Poiché al momento la mia attività è individuale NON accetto telefonate perché lavoro gran parte del tempo, a meno che tu non stia andando al tuo appuntamento e hai difficoltà a trovare la mia posizione.<br><br>
+                        Se hai domande o dubbi, sentiti libero/a scrivermi, ti risponderò il prima possibile!
+                    </p>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Politica di cancellazione</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Nella vita a volte ci sono gli imprevisti e va bene!<br><br>
+                        Per rispetto nei confronti degli altri che stanno cercando di inserirsi nel programma e per darmi il tempo di contattarli, chiedo un preavviso di 48 ore se dovete cancellare o riprogrammare un appuntamento.<br><br>
+                        Nel caso in cui dobbiate cancellare o riprogrammare l'appuntamento entro le 48 ore, vi sarà una tassa di cancellazione pari al 50% del costo totale del servizio. In caso di cancellazione entro le 24 ore, verrà applicata una tariffa di cancellazione pari al 100% del costo totale del servizio.<br><br>
+                        Se è la prima volta che dovete cancellare all'ultimo minuto, la vostra tassa di cancellazione sarà utilizzata come credito per il vostro prossimo appuntamento!<br><br>
+                        Se avete già cancellato una volta entro le 48 ore, NON potrete utilizzare la vostra tassa di cancellazione come credito in futuro.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Politica sui ritardi</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        Questa attività non ha un limite al ritardo con cui un cliente può arrivare all'appuntamento, a patto che ci sia una comunicazione adeguata.<br><br>
+                        Se un cliente non arriva entro 20 minuti dall'orario di inizio dell'appuntamento e non ci sono sue notizie, sarà considerato un no-show e gli verrà addebitata una tassa di cancellazione pari al 100% del costo totale del servizio.<br><br>
+                        Per rispetto verso gli altri clienti e di chi sta prestando il servizio, sappiate che la vostra seduta terminerà comunque all'ora originariamente prevista. Se potrò farvi godere di una tempistica il più vicino possibile a quella prevista, lo farò.<br><br>
+                        Tuttavia, questo non è garantito né deve essere previsto.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-[calc(50%-1rem)]">
+                    <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                        <span>Dove si svolgono i massaggi?</span>
+                        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <p class="font-light leading-relaxed hidden">
+                        I massaggi possono essere effettuati a domicilio o presso centri convenzionati. Mi sposto in tutta la zona di Trento e dintorni.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="cta-section" class="py-24 bg-black/10">
         <div class="px-8 max-w-7xl mx-auto relative">
@@ -302,7 +546,8 @@
                     </p>
                     <p class="font-light leading-relaxed mb-8 text-[var(--bg-light)]">
                         Insieme possiamo offrire ai clienti un'esperienza completa, combinando trattamenti
-                        personalizzati e tecniche di alta qualità per migliorare il loro benessere. Contattami per discutere
+                        personalizzati e tecniche di alta qualità per migliorare il loro benessere. Contattami per
+                        discutere
                         le tue esigenze e creare un progetto su misura.
                     </p>
                     <div class="relative">
@@ -335,15 +580,15 @@
     </section>
 
     <footer class="py-12 bg-black/25">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row sm:justify-between sm:items-center gap-8 px-8">
             <div class="text-left">
                 <h3 class="font-semibold text-xl mb-2">Arianna Postinghel</h3>
                 <p class="font-light">Massaggiatrice</p>
             </div>
             <div class="flex gap-8">
-                <a href="mailto:info@ariannamassaggi.it" class="hover:opacity-80">Email</a>
-                <a href="https://www.linkedin.com/in/ariannamassaggi/" class="hover:opacity-80">LinkedIn</a>
-                <a href="https://www.instagram.com/arianna_massaggi/" class="hover:opacity-80">Instagram</a>
+                <a href="mailto:info@ariannamassaggi.it" class="hover:opacity-80" target="_blank">Email</a>
+                <a href="https://www.linkedin.com/in/ariannamassaggi/" class="hover:opacity-80" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/arianna_massaggi/" class="hover:opacity-80" target="_blank">Instagram</a>
             </div>
         </div>
     </footer>
