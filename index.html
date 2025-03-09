@@ -48,6 +48,14 @@
         });
     </script>
 
+    <script>
+        !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+        posthog.init('phc_VaACAH4gdl8Owpr5YzN7ZJNvlYfQvP8RQYXB01lPuwu', {
+            api_host: 'https://eu.i.posthog.com',
+            person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+        })
+    </script>
+
     <meta name="description"
         content="Arianna Postinghel - Massaggiatrice. Specializzata in massaggi terapeutici e di benessere. Collaboro con centri estetici, palestre e strutture del benessere per portare il mio servizio professionale dove serve." />
     <meta name="keywords"
@@ -107,7 +115,8 @@
                 <div class="text-2xl mb-6"><span class="numbered">2</span>Arianna Postinghel</div>
 
                 <div class="relative">
-                    <h1 class="text-[#6B4E34] text-5xl font-semibold font-['Inter'] leading-none text-left">
+                    <h1
+                        class="text-[#6B4E34] text-3xl md:text-4xl lg:text-5xl font-semibold font-['Inter'] leading-none text-left">
                         <span class="numbered">3</span>Massaggiatrice
                         <span><br class="hidden md:block"></span>
                         per il tuo benessere
@@ -142,12 +151,15 @@
     <section id="about-section" class="">
 
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 px-8">
-            <div class="w-full flex flex-row items-end gap-4 py-32">
-                <h2 class="text-5xl font-semibold mb-4 w-1/2"><span class="numbered">6</span>Benessere e
-                    <br class="hidden md:block">attraverso trattamenti<br class="hidden md:block">personalizzati</h2>
-                <p class="font-light leading-relaxed mb-4 w-1/2">
+            <div class="w-full flex flex-col md:flex-row items-end md:items-start gap-4 py-32">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 md:w-1/2"><span
+                        class="numbered">6</span>Benessere e
+                    <br class="hidden md:block">attraverso trattamenti<br class="hidden md:block">personalizzati
+                </h2>
+                <p class="font-light leading-relaxed mb-4 md:w-1/2">
                     <span class="numbered">7</span>Massaggiatrice di Trento con l'obiettivo di portare benessere e relax
-                    attraverso trattamenti personalizzati. Unisco empatia e professionalità per creare un ambiente rilassante e offrire un servizio flessibile e di alta qualità.
+                    attraverso trattamenti personalizzati. Unisco empatia e professionalità per creare un ambiente
+                    rilassante e offrire un servizio flessibile e di alta qualità.
                 </p>
 
             </div>
@@ -192,96 +204,134 @@
 
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 px-8">
             <div class="w-full md:w-1/3 flex flex-row items-start gap-4">
-                <h2 class="text-5xl font-semibold mb-4"><span class="numbered">6</span>Per lo sportivo</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4"><span class="numbered">6</span>Per lo
+                    sportivo</h2>
             </div>
             <div class="w-full md:w-2/3 flex flex-col gap-4">
                 <div class="mb-8">
-                    <div class="font-semibold mb-1">Massaggio Decontratturante</div>
-                    <p class="font-light">Ideale per sciogliere le tensioni muscolari e alleviare il dolore. Perfetto
-                        per chi pratica sport o passa molto tempo seduto.</p>
+                    <div class="font-semibold mb-1">Massaggio 1</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
                 <div class="mb-8">
-                    <div class="font-semibold mb-1">Massaggio Sportivo</div>
-                    <p class="font-light">Specifico per atleti e sportivi, aiuta a prevenire infortuni e migliorare le
-                        prestazioni. Include tecniche di stretching e mobilizzazione.</p>
+                    <div class="font-semibold mb-1">Massaggio 2</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
                 <div class="mb-8">
-                    <div class="font-semibold mb-1">Massaggio di Recupero</div>
-                    <p class="font-light">Perfetto post-allenamento per accelerare il recupero muscolare e ridurre
-                        l'indolenzimento. Combina diverse tecniche per un risultato ottimale.</p>
+                    <div class="font-semibold mb-1">Massaggio 3</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio 4</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio 5</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio 6</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
 
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 mt-24 px-8">
             <div class="w-full md:w-1/3 flex flex-row items-start gap-4">
-                <h2 class="text-5xl font-semibold mb-4"><span class="numbered">7</span>Per il relax</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4"><span class="numbered">7</span>Per il
+                    relax</h2>
             </div>
             <div class="w-full md:w-2/3 flex flex-col gap-4">
                 <div class="mb-8">
-                    <div class="font-semibold mb-1">Massaggio Rilassante</div>
-                    <p class="font-light">Un massaggio delicato che utilizza movimenti fluidi e avvolgenti per alleviare lo stress e favorire il rilassamento profondo. Ideale per ritrovare equilibrio e serenità.</p>
+                    <div class="font-semibold mb-1">Massaggio 1</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
                 <div class="mb-8">
-                    <div class="font-semibold mb-1">Massaggio Svedese</div>
-                    <p class="font-light">Combina diverse tecniche di manipolazione per rilassare i muscoli, migliorare la circolazione e ridurre le tensioni. Un classico del benessere per corpo e mente.</p>
+                    <div class="font-semibold mb-1">Massaggio 2</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
                 <div class="mb-8">
-                    <div class="font-semibold mb-1">Massaggio Antistress</div>
-                    <p class="font-light">Progettato per combattere gli effetti dello stress quotidiano, migliora la qualità del sonno e riduce l'ansia. Un vero momento di pausa rigenerante.</p>
+                    <div class="font-semibold mb-1">Massaggio 3</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio 4</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
 
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 mt-24 px-8">
             <div class="w-full md:w-1/3 flex flex-row items-start gap-4">
-                <h2 class="text-5xl font-semibold mb-4"><span class="numbered">8</span>Per la donna</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4"><span class="numbered">8</span>Per la
+                    donna</h2>
             </div>
             <div class="w-full md:w-2/3 flex flex-col gap-4">
                 <div class="mb-8">
-                    <div class="font-semibold mb-1">Massaggio Drenante</div>
-                    <p class="font-light">Specifico per migliorare la circolazione linfatica, ridurre i gonfiori e la ritenzione idrica. Ideale per gambe leggere e una silhouette più armoniosa.</p>
+                    <div class="font-semibold mb-1">Massaggio 1</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
                 <div class="mb-8">
-                    <div class="font-semibold mb-1">Massaggio in Gravidanza</div>
-                    <p class="font-light">Un dolce trattamento studiato per le future mamme, che allevia i disturbi tipici della gravidanza e dona una piacevole sensazione di leggerezza.</p>
+                    <div class="font-semibold mb-1">Massaggio 2</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
                 <div class="mb-8">
-                    <div class="font-semibold mb-1">Massaggio Modellante</div>
-                    <p class="font-light">Combina tecniche specifiche per migliorare il tono della pelle, ridurre gli inestetismi della cellulite e rimodellare la silhouette in modo naturale.</p>
+                    <div class="font-semibold mb-1">Massaggio 3</div>
+                    <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
 
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 mt-24 px-8">
             <div class="w-full md:w-1/3 flex flex-row items-start gap-4">
-                <h2 class="text-5xl font-semibold mb-4 w-1/2"><span class="numbered">9</span>Scegli il<br class="hidden md:block">tempo</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 w-1/2"><span
+                        class="numbered">9</span>Scegli il tempo</h2>
             </div>
             <div class="w-full md:w-2/3 flex flex-col gap-4">
                 <div class="mb-8">
                     <div class="font-semibold mb-1">30 minuti</div>
-                    <p class="font-light">Perfetto per chi ha poco tempo o per trattare una zona specifica del corpo.</p>
+                    <p class="font-light">Perfetto per chi ha poco tempo o per trattare una zona specifica del corpo.
+                    </p>
                 </div>
 
                 <div class="mb-8">
                     <div class="font-semibold mb-1">60 minuti</div>
-                    <p class="font-light">Massaggio completo su una o più aree del corpo. Perfetto per un'esperienza equilibrata.</p>
+                    <p class="font-light">Massaggio completo su una o più aree del corpo. Perfetto per un'esperienza
+                        equilibrata.</p>
                 </div>
 
                 <div class="mb-8">
                     <div class="font-semibold mb-1">90 minuti</div>
-                    <p class="font-light">Massaggio prolungato che tratta in dettaglio più zone del corpo e alleviare tensioni.</p>
+                    <p class="font-light">Massaggio prolungato che tratta in dettaglio più zone del corpo e alleviare
+                        tensioni.</p>
                 </div>
 
                 <div class="mb-8">
                     <div class="font-semibold mb-1">120 minuti</div>
-                    <p class="font-light">Massaggio completo che tratta ogni zona del corpo con attenzione, ideale per un totale rilassamento e benessere profondo.</p>
+                    <p class="font-light">Massaggio completo che tratta ogni zona del corpo con attenzione, ideale per
+                        un totale rilassamento e benessere profondo.</p>
                 </div>
             </div>
         </div>
@@ -291,7 +341,7 @@
     <!-- FAQ -->
     <section id="faq-section" class="py-12">
         <div class="px-4 max-w-7xl mx-auto">
-            <h2 class="text-5xl font-semibold mb-8 text-left">Domande frequenti</h2>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 text-left">Domande frequenti</h2>
 
             <div class="flex flex-wrap gap-2">
                 <div class="w-full md:w-[calc(50%-1rem)]">
@@ -414,7 +464,7 @@
             </div>
 
 
-            <h2 class="text-5xl font-semibold mt-24 mb-8 text-left">Policy</h2>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mt-24 mb-8 text-left">Policy</h2>
 
             <div class="flex flex-wrap gap-2">
 
@@ -517,7 +567,8 @@
                     style="background-image: url('decoration2.png'); background-position: right; background-repeat: no-repeat; background-size: auto 100%;">
                 </div>
                 <div class="p-8 md:p-16 max-w-2xl relative">
-                    <h2 class="text-3xl font-semibold mb-4 text-[var(--bg-light)]">Collaboriamo per il Benessere</h2>
+                    <h2 class="text-2xl md:text-3xl lg:text-3xl font-semibold mb-4 text-[var(--bg-light)]">Collaboriamo
+                        per il Benessere</h2>
                     <p class="font-light leading-relaxed mb-4 text-[var(--bg-light)]">
                         Sono sempre aperta a nuove collaborazioni con centri fitness, palestre, spa e professionisti del
                         settore wellness.
