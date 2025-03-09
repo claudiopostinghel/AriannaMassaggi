@@ -10,6 +10,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
+    <style>
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .numbered {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background: red;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-size: 12px;
+            margin-right: 4px;
+        }
+
+        .show-numbers .numbered {
+            display: inline-flex;
+        }
+    </style>
+
+    <script>
+        window.addEventListener('load', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('numeri')) {
+                document.body.classList.add('show-numbers');
+            }
+        });
+    </script>
+
     <meta name="description"
         content="Arianna Postinghel - Massaggiatrice. Specializzata in massaggi terapeutici e di benessere. Collaboro con centri estetici, palestre e strutture del benessere per portare il mio servizio professionale dove serve." />
     <meta name="keywords"
@@ -53,7 +91,7 @@
             <div class="px-4 max-w-7xl mx-auto py-4 flex justify-between items-center">
                 <div class="text-lg font-semibold flex items-center gap-2">
                     <img src="logo.svg" alt="" srcset="" class="w-8 h-8">
-                    <span>Arianna Postinghel</span>
+                    <span><span class="numbered">1</span>Arianna Postinghel</span>
                 </div>
             </div>
         </div>
@@ -66,25 +104,26 @@
                 class="acqua absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[1200px] opacity-30 z-0" />
 
             <div class="w-full sm:w-1/2 relative z-10 text-left flex flex-col justify-center">
-                <div class="text-2xl mb-6">Arianna Postinghel</div>
+                <div class="text-2xl mb-6"><span class="numbered">2</span>Arianna Postinghel</div>
 
                 <div class="relative">
-                    <h1 class="text-4xl md:text-5xl xl:text-6xl font-semibold font-['Inter'] leading-none text-left">
-                        Massaggiatrice
+                    <h1 class="text-[#6B4E34] text-5xl font-semibold font-['Inter'] leading-none text-left">
+                        <span class="numbered">3</span>Massaggiatrice
                         <span><br class="hidden md:block"></span>
                         per il tuo benessere
                     </h1>
                 </div>
 
                 <p class="font-light max-w-2xl leading-[130%] text-left mt-8 mb-12">
-                    Offro massaggi personalizzati che promuovono il benessere fisico e mentale, garantendo un'esperienza
+                    <span class="numbered">4</span>Offro massaggi personalizzati che promuovono il benessere fisico e
+                    mentale, garantendo un'esperienza
                     unica in un ambiente sicuro e accogliente.
                 </p>
 
                 <a href="https://wa.me/393403419861" target="_blank"
                     class="cta-button relative w-fit flex items-center">
                     <img src="whatsapp.svg" alt="WhatsApp" class="w-4 max-h-4 mr-2" />
-                    Prenota un massaggio
+                    <span class="numbered">5</span>Prenota un massaggio
                 </a>
             </div>
 
@@ -100,184 +139,159 @@
 
 
     <!-- Chi Sono -->
-    <section id="about-section" class="py-12">
-        <div class="px-4 max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-3/5">
-                    <h2 class="text-3xl font-semibold mb-4">Chi sono</h2>
-                    <p class="font-light leading-relaxed mb-4">
-                        Massaggiatrice di Trento con l'obiettivo di portare benessere e relax attraverso
-                        trattamenti personalizzati. Unisco empatia e professionalità per creare un ambiente rilassante e
-                        offrire un servizio flessibile e di alta qualità.
-                    </p>
+    <section id="about-section" class="">
 
-                </div>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 px-8">
+            <div class="w-full flex flex-row items-end gap-4 py-32">
+                <h2 class="text-5xl font-semibold mb-4 w-1/2"><span class="numbered">6</span>Benessere e
+                    <br class="hidden md:block">attraverso trattamenti<br class="hidden md:block">personalizzati</h2>
+                <p class="font-light leading-relaxed mb-4 w-1/2">
+                    <span class="numbered">7</span>Massaggiatrice di Trento con l'obiettivo di portare benessere e relax
+                    attraverso trattamenti personalizzati. Unisco empatia e professionalità per creare un ambiente rilassante e offrire un servizio flessibile e di alta qualità.
+                </p>
+
             </div>
+        </div>
 
-            <div class="flex flex-col lg:flex-row gap-2 mb-4">
-                <div class="px-4 py-2 rounded-xl bg-black/5 flex-1">
-                    <div class="font-semibold mb-1">Formazione Estetica</div>
-                    Estetista e Tecnica dei Trattamenti Estetici, con specializzazione Termale e formazione nelle
+        <div class="bg-red-500 py-12"
+            style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.10) 100%);">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-4 mb-20 px-8">
+                <div class="rounded-xl flex-1">
+                    <div class="font-semibold mb-1"><span class="numbered">8</span>Formazione Estetica</div>
+                    <span class="numbered">9</span>Estetista e Tecnica dei Trattamenti Estetici, con specializzazione
+                    Termale e formazione nelle
                     tecniche di massaggio
                 </div>
-                <div class="px-4 py-2 rounded-xl bg-black/5 flex-1">
-                    <div class="font-semibold mb-1">Esperienza Decennale</div>
-                    Quasi 10 anni di esperienza in rinomati centri benessere in Italia e all'estero in massaggi e
+                <div class="rounded-xl flex-1">
+                    <div class="font-semibold mb-1"><span class="numbered">10</span>Esperienza Decennale</div>
+                    <span class="numbered">11</span>Quasi 10 anni di esperienza in rinomati centri benessere in Italia e
+                    all'estero in massaggi e
                     rituali
                 </div>
-                <div class="px-4 py-2 rounded-xl bg-black/5 flex-1">
-                    <div class="font-semibold mb-1">Sempre in crescita</div>
-                    Conseguendo il Diploma di Operatore Professionale in Massaggio Tecnico-Sportivo alla scuola Diabasi
+                <div class="rounded-xl flex-1">
+                    <div class="font-semibold mb-1"><span class="numbered">12</span>Sempre in crescita</div>
+                    <span class="numbered">13</span>Conseguendo il Diploma di Operatore Professionale in Massaggio
+                    Tecnico-Sportivo alla scuola Diabasi
                 </div>
             </div>
 
-            <!-- <div class="flex items-center justify-center mt-8 mb-8">
-                <div class="h-[1px] bg-black/20 flex-1"></div>
-                <svg class="w-8 h-8 mx-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11">
-                    </path>
-                </svg>
-                <div class="h-[1px] bg-black/20 flex-1"></div>
-            </div> -->
+            <!-- photos -->
+            <div class="overflow-hidden whitespace-nowrap">
+                <div class="inline-block animate-[scroll_20s_linear_infinite] gap-0">
+                    <img src="carosello/carosello@1.png" alt="" class="inline-block"><img
+                        src="carosello/carosello@1.png" alt="" class="inline-block">
+                </div>
+            </div>
 
         </div>
+
     </section>
 
     <!-- I Miei Massaggi -->
-    <section id="services-section" class="py-12">
-        <div class="px-4 max-w-7xl mx-auto">
-            <h2 class="text-xl font-semibold mb-2 text-left">I Miei Massaggi</h2>
+    <section id="services-section" class="py-32">
 
-            <!-- <p class="font-light leading-relaxed mb-12 max-w-2xl text-left">
-                Offro massaggi e rituali personalizzati per garantire benessere e relax.
-                
-                Ascolto le esigenze di ogni cliente per scegliere la tecnica più adatta, creando un ambiente curato e rilassante, con flessibilità nelle location.
-
-            </p> -->
-
-            <p class="font-light leading-relaxed mb-2 max-w-2xl text-left">
-                Offro massaggi e rituali per garantire benessere e relax.
-            </p>
-            <p class="font-light leading-relaxed mb-12 max-w-2xl text-left">
-                Sono specializzata in massaggi profondi come il Decontratturante, lo Sportivo e il Miofasciale, ma offro
-                anche massaggi di media pressione come lo Svedese, il Drenante e il massaggio in gravidanza.
-                Dove serve, utilizzo tecniche ausiliari come la Coppettazione e l’applicazione del Taping Kinesiologico.
-            </p>
-
-            <!-- <div class="flex flex-col md:flex-row gap-2">
-                <div class="w-full lg:w-1/2">
-                    <div class="flex flex-col gap-2">
-                        <div class="w-full">
-                            <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                                <span class="text-left">IL RILASSANTE</span>
-                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <p class="font-light leading-relaxed hidden">
-                                Il massaggio rilassante ha una leggera pressione e delle manualità calde e avvolgenti. Mira principalmente al miglioramento dello stato di benessere della persona. Stimola la produzione di endorfine migliorando la qualità del sonno, la memoria e la concentrazione.
-                            </p>
-                        </div>
-
-                        <div class="w-full">
-                            <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                                <span class="text-left">LO SVEDESE</span>
-                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <p class="font-light leading-relaxed hidden">
-                                Il massaggio svedese si caratterizza per l'esecuzione di differenti ma ben precise manipolazioni (sfioramenti, sfregamenti, impastamenti, frizioni, percussioni) di intensità più o meno elevata. Generalmente, è prevista la manipolazione dell'intero corpo ma, a seconda delle esigenze, è possibile manipolare anche solo una o alcune aree.
-                            </p>
-                        </div>
-
-                        <div class="w-full">
-                            <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                                <span class="text-left">IL DECONTRATTURANTE</span>
-                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <p class="font-light leading-relaxed hidden">
-                                Il massaggio decontratturante è mirato a sciogliere le contratture muscolari che si formano a causa di tensioni, posture scorrette o stress. Questo tipo di massaggio lavora in profondità per rilassare i muscoli, alleviare il dolore e migliorare la mobilità. È indicato per chi soffre di dolori muscolari dovuti a uno stile di vita sedentario o a sforzi specifici, anche senza essere uno sportivo.
-                            </p>
-                        </div>
-                    </div>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 px-8">
+            <div class="w-full md:w-1/3 flex flex-row items-start gap-4">
+                <h2 class="text-5xl font-semibold mb-4"><span class="numbered">6</span>Per lo sportivo</h2>
+            </div>
+            <div class="w-full md:w-2/3 flex flex-col gap-4">
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio Decontratturante</div>
+                    <p class="font-light">Ideale per sciogliere le tensioni muscolari e alleviare il dolore. Perfetto
+                        per chi pratica sport o passa molto tempo seduto.</p>
                 </div>
 
-                <div class="w-full lg:w-1/2">
-                    <div class="flex flex-col gap-2">
-                        <div class="w-full">
-                            <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                                <span class="text-left">LO SPORTIVO</span>
-                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <p class="font-light leading-relaxed hidden">
-                                Il massaggio sportivo, invece, è pensato per chi pratica sport, sia a livello professionale che amatoriale. Può essere eseguito prima dell'attività fisica, per riscaldare i muscoli e prepararli allo sforzo, oppure dopo, per favorire il recupero, ridurre la rigidità e prevenire gli infortuni. Questo massaggio combina diverse tecniche (come lo stretching e le percussioni) per migliorare l'elasticità muscolare, prevenire crampi e migliorare le performance.
-                            </p>
-                        </div>
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio Sportivo</div>
+                    <p class="font-light">Specifico per atleti e sportivi, aiuta a prevenire infortuni e migliorare le
+                        prestazioni. Include tecniche di stretching e mobilizzazione.</p>
+                </div>
 
-                        <div class="w-full">
-                            <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                                <span class="text-left">IL DRENANTE</span>
-                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <p class="font-light leading-relaxed hidden">
-                                Il massaggio drenante è una tecnica studiata per ridurre la ritenzione idrica, attenua il gonfiore e la sensazione di pesantezza nelle gambe. Favorisce l'eliminazione delle tossine accumulate, migliorando la naturale purificazione dell'organismo. Stimola il ritorno venoso e la circolazione linfatica, aiuta a ridurre la comparsa della cellulite e a migliorare l'elasticità della pelle.
-                            </p>
-                        </div>
-
-                        <div class="w-full">
-                            <button class="w-full flex items-center justify-between text-xl font-semibold mb-2 hover:opacity-80 bg-black/5 p-4 rounded-xl" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
-                                <span class="text-left">IL MATERNITY</span>
-                                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </button>
-                            <p class="font-light leading-relaxed hidden">
-                                Il massaggio maternity, eseguibile dal secondo trimestre di gravidanza, è un momento in cui la mamma può ricevere una coccola che rilasserà non solo lei ma anche il bimbo che porta in grembo. Questo speciale massaggio riduce stress, ansia e insonnia, allevia tensioni e dolori muscolari, riduce il gonfiore delle gambe e piedi donando una sensazione di leggerezza immediata. Le dolci e avvolgenti manovre stimolano la produzione di endorfine, riducono il mal di testa, migliorano la circolazione sanguigna e linfatica, preparando allo stesso tempo la muscolatura al parto.
-                            </p>
-                        </div>
-                    </div>
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio di Recupero</div>
+                    <p class="font-light">Perfetto post-allenamento per accelerare il recupero muscolare e ridurre
+                        l'indolenzimento. Combina diverse tecniche per un risultato ottimale.</p>
                 </div>
             </div>
+        </div>
 
-            <div class="mt-12">
-                <h3 class="text-xl font-semibold mb-4">Scegli il Tempo per il Tuo Benessere</h3>
-                <div class="flex flex-col lg:flex-row gap-2">
-                    <div class="bg-black/5 p-4 rounded-xl flex-1">
-                        <div class="font-semibold">30 minuti</div>
-                        <p class="font-light">Perfetto per chi ha poco tempo o per trattare una zona specifica del
-                            corpo.</p>
-                    </div>
-                    <div class="bg-black/5 p-4 rounded-xl flex-1">
-                        <div class="font-semibold">60 minuti</div>
-                        <p class="font-light">Massaggio completo su una o più aree del corpo. Perfetto per un'esperienza
-                            equilibrata.</p>
-                    </div>
-                    <div class="bg-black/5 p-4 rounded-xl flex-1">
-                        <div class="font-semibold">90 minuti</div>
-                        <p class="font-light">Massaggio prolungato che tratta in dettaglio più zone del corpo e
-                            alleviare tensioni.</p>
-                    </div>
-                    <div class="bg-black/5 p-4 rounded-xl flex-1">
-                        <div class="font-semibold">120 minuti</div>
-                        <p class="font-light">Massaggio completo che tratta ogni zona del corpo con attenzione, ideale
-                            per un totale rilassamento e benessere profondo.</p>
-                    </div>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 mt-24 px-8">
+            <div class="w-full md:w-1/3 flex flex-row items-start gap-4">
+                <h2 class="text-5xl font-semibold mb-4"><span class="numbered">7</span>Per il relax</h2>
+            </div>
+            <div class="w-full md:w-2/3 flex flex-col gap-4">
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio Rilassante</div>
+                    <p class="font-light">Un massaggio delicato che utilizza movimenti fluidi e avvolgenti per alleviare lo stress e favorire il rilassamento profondo. Ideale per ritrovare equilibrio e serenità.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio Svedese</div>
+                    <p class="font-light">Combina diverse tecniche di manipolazione per rilassare i muscoli, migliorare la circolazione e ridurre le tensioni. Un classico del benessere per corpo e mente.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio Antistress</div>
+                    <p class="font-light">Progettato per combattere gli effetti dello stress quotidiano, migliora la qualità del sonno e riduce l'ansia. Un vero momento di pausa rigenerante.</p>
                 </div>
             </div>
-        </div> -->
+        </div>
+
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 mt-24 px-8">
+            <div class="w-full md:w-1/3 flex flex-row items-start gap-4">
+                <h2 class="text-5xl font-semibold mb-4"><span class="numbered">8</span>Per la donna</h2>
+            </div>
+            <div class="w-full md:w-2/3 flex flex-col gap-4">
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio Drenante</div>
+                    <p class="font-light">Specifico per migliorare la circolazione linfatica, ridurre i gonfiori e la ritenzione idrica. Ideale per gambe leggere e una silhouette più armoniosa.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio in Gravidanza</div>
+                    <p class="font-light">Un dolce trattamento studiato per le future mamme, che allevia i disturbi tipici della gravidanza e dona una piacevole sensazione di leggerezza.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">Massaggio Modellante</div>
+                    <p class="font-light">Combina tecniche specifiche per migliorare il tono della pelle, ridurre gli inestetismi della cellulite e rimodellare la silhouette in modo naturale.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 mt-24 px-8">
+            <div class="w-full md:w-1/3 flex flex-row items-start gap-4">
+                <h2 class="text-5xl font-semibold mb-4 w-1/2"><span class="numbered">9</span>Scegli il<br class="hidden md:block">tempo</h2>
+            </div>
+            <div class="w-full md:w-2/3 flex flex-col gap-4">
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">30 minuti</div>
+                    <p class="font-light">Perfetto per chi ha poco tempo o per trattare una zona specifica del corpo.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">60 minuti</div>
+                    <p class="font-light">Massaggio completo su una o più aree del corpo. Perfetto per un'esperienza equilibrata.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">90 minuti</div>
+                    <p class="font-light">Massaggio prolungato che tratta in dettaglio più zone del corpo e alleviare tensioni.</p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="font-semibold mb-1">120 minuti</div>
+                    <p class="font-light">Massaggio completo che tratta ogni zona del corpo con attenzione, ideale per un totale rilassamento e benessere profondo.</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
 
     <!-- FAQ -->
     <section id="faq-section" class="py-12">
         <div class="px-4 max-w-7xl mx-auto">
-            <h2 class="text-xl font-semibold mb-8 text-left">Domande frequenti</h2>
+            <h2 class="text-5xl font-semibold mb-8 text-left">Domande frequenti</h2>
 
             <div class="flex flex-wrap gap-2">
                 <div class="w-full md:w-[calc(50%-1rem)]">
@@ -400,7 +414,7 @@
             </div>
 
 
-            <h2 class="text-xl font-semibold mt-12 mb-8 text-left">Policy</h2>
+            <h2 class="text-5xl font-semibold mt-24 mb-8 text-left">Policy</h2>
 
             <div class="flex flex-wrap gap-2">
 
@@ -463,8 +477,8 @@
                         tassa di cancellazione pari al 50% del costo totale del servizio. In caso di cancellazione entro
                         le 24 ore, verrà applicata una tariffa di cancellazione pari al 100% del costo totale del
                         servizio.<br><br>
-                        Se è la prima volta che dovete cancellare all'ultimo minuto, la vostra tassa di cancellazione
-                        sarà utilizzata come credito per il vostro prossimo appuntamento!<br><br>
+                        Se è la prima volta che dovete cancellare all'ultimo minuto, la vostra tassa di
+                        cancellazione sarà utilizzata come credito per il vostro prossimo appuntamento!<br><br>
                         Se avete già cancellato una volta entro le 48 ore, NON potrete utilizzare la vostra tassa di
                         cancellazione come credito in futuro.
                     </p>
