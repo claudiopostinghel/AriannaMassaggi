@@ -11,10 +11,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-#hero-section {
-    background: var(--bg-light);
-}
-
 .cta-button {
     background-color: var(--primary);
     color: white;
