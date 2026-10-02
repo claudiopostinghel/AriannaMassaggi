@@ -1,0 +1,14 @@
+# Link brevi per i punti d'ingresso (stampati sui QR e nei profili social).
+# La destinazione si può cambiare qui senza ristampare nulla.
+/ig            /?utm_source=instagram&utm_medium=social&utm_campaign=bio         302
+/storie        /?utm_source=instagram&utm_medium=social&utm_campaign=storie      302
+/g             /?utm_source=google&utm_medium=organic&utm_campaign=profilo       302
+/prenota       /?utm_source=google&utm_medium=organic&utm_campaign=prenota       302
+/fb            /?utm_source=facebook&utm_medium=social&utm_campaign=pagina       302
+/fb-post       /?utm_source=facebook&utm_medium=social&utm_campaign=post         302
+/stato         /?utm_source=whatsapp&utm_medium=social&utm_campaign=stato        302
+/qr-studio     /?utm_source=qr&utm_medium=offline&utm_campaign=studio            302
+/qr-biglietto  /?utm_source=qr&utm_medium=offline&utm_campaign=biglietto         302
+
+# Materiali di lavoro: nel repository ma non pubblicati
+/materiali/*   /   302

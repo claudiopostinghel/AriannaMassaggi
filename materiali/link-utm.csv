@@ -1,0 +1,11 @@
+canale,dove usarlo,URL completo,link breve,codice WhatsApp
+Instagram,Link in bio del profilo @arianna_massaggi,https://ariannamassaggi.it/?utm_source=instagram&utm_medium=social&utm_campaign=bio,https://ariannamassaggi.it/ig,IG
+Instagram,Sticker link nelle storie,https://ariannamassaggi.it/?utm_source=instagram&utm_medium=social&utm_campaign=storie,https://ariannamassaggi.it/storie,IGS
+Instagram,Storia dedicata a un tema (modello: sostituire il valore di utm_content),https://ariannamassaggi.it/?utm_source=instagram&utm_medium=social&utm_campaign=storie&utm_content=2026-10-coppettazione,,IGS
+Google Business Profile,Campo "Sito web" della scheda,https://ariannamassaggi.it/?utm_source=google&utm_medium=organic&utm_campaign=profilo,https://ariannamassaggi.it/g,GB
+Google Business Profile,Campo "Link per prenotare" della scheda,https://ariannamassaggi.it/?utm_source=google&utm_medium=organic&utm_campaign=prenota,https://ariannamassaggi.it/prenota,GBP
+Facebook,Campo "Sito web" della pagina,https://ariannamassaggi.it/?utm_source=facebook&utm_medium=social&utm_campaign=pagina,https://ariannamassaggi.it/fb,FB
+Facebook,Link nei post,https://ariannamassaggi.it/?utm_source=facebook&utm_medium=social&utm_campaign=post,https://ariannamassaggi.it/fb-post,FBP
+WhatsApp,Stato WhatsApp,https://ariannamassaggi.it/?utm_source=whatsapp&utm_medium=social&utm_campaign=stato,https://ariannamassaggi.it/stato,WA
+QR code,Cartello o locandina in studio,https://ariannamassaggi.it/?utm_source=qr&utm_medium=offline&utm_campaign=studio,https://ariannamassaggi.it/qr-studio,QS
+QR code,Retro dei biglietti da visita,https://ariannamassaggi.it/?utm_source=qr&utm_medium=offline&utm_campaign=biglietto,https://ariannamassaggi.it/qr-biglietto,QB
